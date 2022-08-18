@@ -1,0 +1,182 @@
+/* The first paragraph */
+.about {
+    margin: 100px 100px; 
+    /* border: 1px solid; */
+}
+
+/* The photo background color */
+.photoColor {
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 90% 30% 50%;
+    background: linear-gradient(to top left, #5F98A9, #273248);
+    border: #F4A300 3px solid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* My photo */
+img {
+    height: 300px;
+}
+
+.title h1{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #F4A300;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    padding-bottom: 90px;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+/* .bar {
+    width: 100%;
+    margin: 50px 0;
+    height: 20%;
+    background-color: rgb(97, 97, 97);
+} */
+
+
+
+.title .btn {
+    border: 2px solid #F4A300;
+    color: #F4A300;
+    /* background:  #ffffff; */
+    font-weight: bold;
+}
+
+
+.d-block {
+    width: auto;
+    height: 500px;
+}
+
+/* This second paragraph */
+.slider h1 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #F4A300;
+    font-weight: bold;
+}
+
+.slider p {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    /* padding: 10px 100px; */
+}
+
+.slider {
+    padding: 10px;
+    margin: 50px 0;
+}
+
+
+/* This third paragraph */
+/* .aboutMe {
+    margin-bottom: 150px;
+} */
+
+.aboutColor {
+    /* width: 100px; */
+    height: 500px;
+    background: linear-gradient(to top left, #5F98A9, #273248);
+    border: 2px solid #F4A300;
+}
+
+.aboutText {
+    padding: 190px 100px 190px 5px;
+    color: rgb(255, 255, 255);
+}
+
+.aboutText h1{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #F4A300;
+    font-weight: bold;
+
+}
+
+.plan img {
+    padding: 5px;
+    height: 400px;
+}
+
+.plan{
+    /* position: absolute; */
+    right: 10px;
+} 
+
+.moblie {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .slider p {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .plan img {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+/* The first paragraph */
+    .title .btn{
+        position: absolute;
+        bottom: 10px;
+        left: 120px;
+    }
+
+
+
+/* This third paragraph */
+    .aboutMe .aboutColor {
+        display: none;
+    }
+
+    .moblie {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .moblie .aboutColor {
+        height: 300px;
+        /* padding: 0; */
+    }
+
+    .moblie .aboutText {
+        padding: 100px 10px 100px 10px;
+        margin: 0;
+    }
+
+    .plan img {
+        display: none;
+    }
+
+    .moblie .img {
+        margin: 0;
+        display: block;
+        height: 200px;
+        padding: 0 0 10px 0;
+    }
+
+    .moblie .aboutText h1{
+        font-family: 'Playfair Display', serif;
+        color: #F4A300;
+        font-weight: bold;
+    }
+}

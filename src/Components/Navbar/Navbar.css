@@ -1,0 +1,152 @@
+.navbarlist {
+    background-color: #464646;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    /* position: fixed; */
+    
+}
+
+div .logo1 {
+    width: 50px;
+    height: auto;
+    padding-left: 10px;
+    content: url("./logo1.png");
+}
+
+div .logo2 {
+    width: 50px;
+    height: auto;
+    padding-left: 10px;
+    content: url("./logo2.png") ;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* width: 100%; navbar 的闊度 */
+    width: 100%;
+    /* height: 50px; navbar 的高度 */
+    height: 50px;
+    max-width: 1500px;
+
+}
+
+/* .nav-container::before{
+    content: "";
+    height: 100%;
+} */
+
+.nav-menu {
+    display: flex;
+    /* list-style: none 能夠由分行變成一行 */
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+    /* margin-top: 0; */
+    margin-bottom: 0;
+}
+
+.nav-links {
+    /* color: rgb(255, 255, 255); */
+    /* text-decoration: none; 令到條link 底線冇左 */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+}
+
+.nav.item {
+    line-height: 40px;
+    margin-right: 1rem;
+    /* position: absolute;
+    bottom: 10px; */
+}
+
+
+.nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+    background: #464646;
+}
+
+.nav-item .active {
+    color: #464646; 
+    border: 1px solid #464646;
+}
+
+.nav-icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 950px) {
+    .navbar{
+        width: 100%;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+    }
+    
+    /* 手機板列表 */
+    .nav-menu.active {
+        background: #464646;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        /* 位置 */
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+
+    .nav-item.active {
+        color: #4b5b69;
+        border: none;
+    }
+
+    .nav-links {
+        padding: 1.5rem;
+        width: 100%;
+        /* display: table; */
+    }
+
+    .nav-icon {
+        display: block;
+        position: absolute;
+        bottom: 28px;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+        margin: 0;
+    }
+}
